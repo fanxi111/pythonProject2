@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artist Album Search Results</title>
+</head>
+<body>
+    <h1>Albums by {{ artist }}</h1>
+    <ul>
+        {% for album in albums %}
+            <li>{{ album.strAlbum }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to search</a>
+</body>
+</html>
